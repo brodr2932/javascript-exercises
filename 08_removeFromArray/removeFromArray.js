@@ -1,13 +1,10 @@
-const removeFromArray = function(arr, val) {
-  const index = arr.indexOf(val);
+const removeFromArray = function(arr, ...vals) {
 
-  arr.splice(index, 1);
-
-  return arr;
+  return arr.filter(item => !vals.includes(item));
 
 };
 
-console.log(removeFromArray([1,2,3], 3));
+console.log(removeFromArray([1,2,3,4], 3, 2));
 
 // Do not edit below this line
 module.exports = removeFromArray;
