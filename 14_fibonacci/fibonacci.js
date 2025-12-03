@@ -1,4 +1,6 @@
 const fibonacci = function(n) {
+
+
   let fibArray = [1, 1]; // starting Fibonacci sequence 
   i = 0;
 
@@ -8,13 +10,17 @@ const fibonacci = function(n) {
     i++;
   }
 
-  if (n === 0) {
+// convert to number, in case input is a string
+
+  let position = parseInt(n);
+
+  if (position === 0) {
     return 0;
-  } else if (n < 0) {
+  } else if (position < 0) {
     return "OOPS";
   } else {
     // return value at n in fib sequence
-    return fibArray[n - 1]; // subtract 1 from n due to zero-based indexing
+    return fibArray[position - 1]; // subtract 1 from n due to zero-based indexing
   }
   
   
