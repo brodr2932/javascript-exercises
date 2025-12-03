@@ -34,8 +34,6 @@ const factorial = function(num) {
   return arr.reduce((acc, curr) => acc * curr);
 };
 
-console.log(factorial(0));
-
 // Do not edit below this line
 module.exports = {
   add,
