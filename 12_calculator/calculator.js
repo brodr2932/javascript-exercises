@@ -18,11 +18,23 @@ const power = function(base, exp) {
 	return base ** exp;
 };
 
-console.log(power(2, 5)); // 8
+const factorial = function(num) {
+  const arr = [];
 
-const factorial = function() {
-	
+  if (num === 0) {
+    return 1;
+  } else {
+    let i = 1;
+    while(i <= num) {
+      arr.push(i);
+      i++;
+    }
+  }
+
+  return arr.reduce((acc, curr) => acc * curr);
 };
+
+console.log(factorial(0));
 
 // Do not edit below this line
 module.exports = {
