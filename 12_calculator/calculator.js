@@ -20,7 +20,7 @@ const power = function(base, exp) {
 
 const factorial = function(num) {
   const arr = [];
-
+  
   if (num === 0) {
     return 1;
   } else {
@@ -30,7 +30,6 @@ const factorial = function(num) {
       i++;
     }
   }
-
   return arr.reduce((acc, curr) => acc * curr);
 };
 
