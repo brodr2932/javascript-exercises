@@ -8,12 +8,20 @@ const fibonacci = function(n) {
     i++;
   }
 
-  // return value at n in fib sequence
-  return fibArray[n - 1]; // subtract 1 from n due to zero-based indexing
+  if (n === 0) {
+    return 0;
+  } else if (n < 0) {
+    return "OOPS";
+  } else {
+    // return value at n in fib sequence
+    return fibArray[n - 1]; // subtract 1 from n due to zero-based indexing
+  }
+  
+  
 };
 
 
-console.table(fibonacci(6));
+console.table(fibonacci(-25));
 
 
 
