@@ -1,5 +1,4 @@
-const fibonacci = function() {
-
+const fibonacci = function(n) {
   let fibArray = [1, 1]; // starting Fibonacci sequence 
   i = 0;
 
@@ -9,11 +8,12 @@ const fibonacci = function() {
     i++;
   }
 
-  return fibArray;
+  // return value at n in fib sequence
+  return fibArray[n - 1]; // subtract 1 from n due to zero-based indexing
 };
 
 
-console.table(fibonacci())
+console.table(fibonacci(6));
 
 
 
