@@ -1,6 +1,4 @@
 const fibonacci = function(n) {
-
-
   let fibArray = [1, 1]; // starting Fibonacci sequence 
   i = 0;
 
@@ -10,27 +8,16 @@ const fibonacci = function(n) {
     i++;
   }
 
-// convert to number, in case input is a string
-
-  let position = parseInt(n);
+  let position = parseInt(n); // convert to number, in case input is a string
 
   if (position === 0) {
     return 0;
   } else if (position < 0) {
     return "OOPS";
   } else {
-    // return value at n in fib sequence
     return fibArray[position - 1]; // subtract 1 from n due to zero-based indexing
   }
-  
-  
 };
-
-
-console.table(fibonacci(-25));
-
-
-
 
 // Do not edit below this line
 module.exports = fibonacci;
