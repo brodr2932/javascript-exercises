@@ -10,7 +10,7 @@ const findTheOldest = function(arr) {
         age: deathYear - person.yearOfBirth
       };
     })
-    .sort((a, b) => b.age - a.age);
+    .sort((a, b) => b.age - a.age); // Sort persons from oldest to youngest
 
   return arrWithAges[0]; // return oldest person (first element in array)
 };
